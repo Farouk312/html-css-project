@@ -8,63 +8,108 @@
 </head>
 <body>
     <section id="top">
-            <h1>Destinations</h1>
-        <h2> Our Links </h2>
-        <nav>
-        <ul>
-        <li><a href="Home.html">Home</a></li>
-        <li><a href="tips.html">Tips</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        </ul>
-        </nav>
+    <header>
+        <h1>Destinations</h1>
+    </header>
     </section>
 
-    <hr>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>  
+            <li><a href="destination.html">Destination</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <section>
         <h2>Tokyo</h2>
-        <img src="unnamed.jpg" alt="Tokyo"  width="300" height="200">
+        <p><b>Tokyo "The Electric Metropolis":</b> Tokyo is a place where ancient temples sit beneath neon skyscrapers. A paradise of cutting-edge technology, world-class food, and deeply cherished traditions.</p>
+        <div class="gallery">
+            <img src="tokyo1.jpg" alt="tokyo photo1">
+            <img src="tokyo2.jpg" alt="tokyo photo2">
+            <img src="tokyo3.jpg" alt="tokyo photo3">
+        </div>
+
         <ul>
         <li>Explore the bustling streets of Shibuya Crossing.</li>
         <li>Visit ancient temples like Senso-ji in Asakusa.</li>
         <li>Enjoy fresh sushi at Tsukiji Market.</li>
         </ul>
-        <button class="read-more">Read More</button>
+         <form action="tips.html" name="login" method="get" id="read-more">
+            <button class="read-more">Read More</button>  
+        </form>
     </section>
+
     <br>
+
     <section>
         <h2>Paris</h2>
-        <img src="download.jpg" alt="Eiffel Tower in Paris">
+        <p><b>Paris "The City of Light":</b> Paris is a place where romance, art, and pastry reign supreme. Home to the Louvre, Notre-Dame, and countless cafes perfect for watching the world go by.</p>
+        <div class="gallery">
+            <img src="paris1.avif" alt="paris photo1">
+            <img src="paris2.jpg" alt="paris photo2">
+            <img src="paris3.jpg" alt="paris photo3">
+        </div>
         <ul>
         <li>Visit the Eiffel Tower early to avoid crowds.</li>
         <li>Try local pastries at a Parisian café.</li>
         <li>Take a sunset boat ride on the Seine River.</li>
         </ul>
-        <button class="read-more">Read More</button>
+        <form action="tips.html" name="login" method="get" id="read-more">
+            <button class="read-more">Read More</button>  
+        </form>
+    </section>
+
+    <section>
+        <h2>Rome</h2>
+        <p><b>Rome "The Eternal City":</b>  Rome is a place where millennia of history echo through cobblestone streets. An open-air museum of colossal ruins, breathtaking art, and life lived passionately in the piazzas.</p>
+        <div class="gallery">
+            <img src="rome1.jpg" alt="rome photo1">
+            <img src="rome2.jpg" alt="rome photo2">
+            <img src="rome3.jpg" alt="rome photo3">
+        </div>
+        <ul>
+        <li>Visit the Colosseum and imagine the gladiatorial battles.</li>
+        <li>Throw a coin in the Trevi Fountain for good luck.</li>
+        <li>Explore the Vatican Museums and St. Peter's Basilica.</li>
+        </ul>
+        <form action="tips.html" name="login" method="get" id="read-more">
+            <button class="read-more">Read More</button>  
+        </form>
     </section>
 
     <table>
         <thead>
-        <tr>
-            <th>Place</th>
-            <th>Cost</th>
-            <th>Rate</th>
-        </tr>
+            <tr>
+                <th>Destination</th>
+                <th>Flight Cost</th>
+                <th>Hotel (per night)</th>
+                <th>Average Daily Spend</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>Paris</td>
-            <td>expensive</td>
-            <td>9/10</td>
-        </tr>
-        <tr>
-            <td>Tokyo</td>
-            <td>moderate</td>
-            <td>8/10</td>
-        </tr>
+            <tr>
+                <td>Paris</td>
+                <td>$750</td>
+                <td>$120</td>
+                <td>$90</td>
+            </tr>
+            <tr>
+                <td>Tokyo</td>
+                <td>$900</td>
+                <td>$150</td>
+                <td>$110</td>
+            </tr>
+            <tr>
+                <td>Rome</td>
+                <td>$680</td>
+                <td>$100</td>
+                <td>$80</td>
+            </tr>
         
         </tbody>
     </table>
-    <footer>end of Comparision</footer>
-    <a href="#top">To the top</a>
+    <a href="#top" class="to-top-btn">To the top</a>
 </body>
 </html>

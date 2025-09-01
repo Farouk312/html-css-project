@@ -1,41 +1,251 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h1{
-    text-align: center;
-    line-height: 50px;
-    text-decoration: underline;
-}
-
-h2{
-    text-decoration: underline;
-    line-height: 50px;
-
-}
-
-.intro{
-    text-align: justify;
-    color: black;
-    line-height: 20px;
-}
-
-.intro:hover{
-    background-color: aquamarine;
-}
-img[src] {
-      width: 700px;
-      height: 500px;
-      border-radius: 10px;
-      margin-bottom: 15px;
+  header {
+      background-color: #333446;
+      padding: 10px 0;
+      text-align: center;
+      margin-bottom: 15px; 
     }
+
+    header h1 {
+      color: #7F8CAA;
+      font-family:"Trebuchet MS", sans-serif;
+      font-size: 36px;
+      /* margin-bottom: 20px; */
+      margin: 0;
+    }
+
+    h1:hover {
+      color: #B8CFCE;
+    }
+
+
+    nav {
+        background-color: #333446;
+        padding: 15px 0 10px 0; 
+        text-align: center;
+        width: 100%;
+        margin: 0; 
+    }
+
+    nav ul {
+        list-style: none; /* يشيل النقط السوداء */
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline; /* يخلي اللينكات جنب بعض */
+        margin: 0 20px; /* مسافة بينهم */
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color:  #7F8CAA;
+        font-family:"Trebuchet MS", sans-serif;
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #B8CFCE;
+    }
+
+    header, nav {
+        background-color: #333446;
+        padding: 15px 0 10px 0;
+        text-align: center;
+        width: 100%;           /* عرض أقل من الصفحة */
+        margin: 0 auto 15px;  /* توسيط الصندوقين */
+        border-radius: 18px;  /* زوايا دائرية */
+        box-shadow: 0 4px 16px rgba(0,0,0,0.10); /* ظل خفيف */
+    }
+
+    h2 {
+        text-align: center;
+        color: #333446;
+        font-family: "Trebuchet MS", sans-serif;
+        margin-top: 30px;
+        margin-bottom: 18px;
+        letter-spacing: 1px;
+    }
+    .intro {
+        background-color:#EAEFEF;
+        border-radius: 14px;
+        box-shadow: 0 2px 8px rgba(127,140,170,0.08);
+        padding: 22px 28px;
+        width: 70%;
+        margin: 0 auto 25px auto;
+        text-align: justify;
+        color: #222;
+        font-size: 1.08rem;
+        line-height: 1.8;
+    
+    }
+
+    blockquote {
+        background-color: #EAEFEF;
+        border-left: 5px solid #3498db; /* يمكنك تركها أو تغيير اللون حسب رغبتك */
+        margin: 30px auto;
+        padding: 18px 28px 12px 28px;
+        width: 70%;
+        font-style: italic;
+        color: #444;
+        font-size: 1.13rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(127,140,170,0.08);
+        text-align: left;
+        position: relative;
+    }
+
+    .quote-text {
+        color: #222;
+        font-style: italic;
+        font-size: 1.08rem;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .quote-author {
+        color: #888;
+        font-size: 1rem;
+        font-style: normal;
+        margin-left: 10px;
+        display: block;
+        text-align: left;
+    }
+
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 24px; /* مسافة بين الصور */
+        flex-wrap: wrap; /* يخلي الصور تنزل تحت لو الشاشة صغيرة */
+        margin-bottom: 30px;
+    }
+
+    .gallery img {
+        width: 350px;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(127,140,170,0.10);
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.07) rotate(-2deg);
+        box-shadow: 0 8px 24px rgba(52,152,219,0.18);
+        filter: brightness(1.08);
+    }
+
+    .to-top-btn {
+        display: block;
+        margin: 30px auto 0 auto;
+        padding: 10px 22px;
+        background-color: #3498db;
+        color: #fff;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 1.08rem;
+        font-family: "Trebuchet MS", sans-serif;
+        font-weight: bold;
+        box-shadow: 0 2px 8px rgba(52,152,219,0.10);
+        text-align: center;
+        width: 100px;
+    }
+
+    .to-top-btn:hover {
+        background-color: #217dbb;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 18px rgba(52,152,219,0.18);
+    }
+
+    #subscribe {
+        width: 80%;
+        margin: 40px auto;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        background-color:#EAEFEF;
+    }
+
+    #subscribe input {
+        padding: 10px;
+        width: 250px;
+        border: 1px solid #bbb;
+        border-radius: 6px;
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+
+    #subscribe button , #read-more button {
+        padding: 10px 18px;
+        border: none;
+        font-weight: bold;
+        background-color:#3498db;
+        color: #fff;
+        font-size: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #subscribe button:hover,.read-more:hover {
+        background-color: #217dbb;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 18px rgba(52,152,219,0.18);
+    }
+
+    .contact-links {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto 0 auto;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-links li {
+    text-align: center;
+    list-style: none;
+}
+
+.contact-links a {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.08rem;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(52,152,219,0.10);
+}
+
+.contact-links a:hover {
+    background-color: #217dbb;
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(52,152,219,0.18);
+}
+
+p{
+    font-family:"Trebuchet MS", sans-serif;
+    font-size: medium;
+    
+}
+
 ul {
       margin-top: 10px;
       padding-left: 20px;
     }
 
 ul > li {
-      font-size: 1rem;
+      font-size: 1.18rem;
       line-height: 1.6;
       list-style-type: square;
       margin-bottom: 8px;
@@ -67,46 +277,8 @@ tr:nth-child(odd) {
   background-color:beige;
 }
 
-blockquote{
-    padding: 12px;
-    border-left: 40px;
-    background-color: antiquewhite;
 
-}
 
-#subscribe {
-    width: 80%;
-    margin: 40px auto;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    background-color: #fdfdfd;
-    }
-
-#subscribe input {
-    padding: 10px;
-    width: 250px;
-    border: 1px solid #bbb;
-    border-radius: 6px;
-    margin-right: 10px;
-    font-size: 1rem;
-    }
-
-#subscribe button {
-    padding: 10px 18px;
-    border: none;
-    background-color: #2c3e50;
-    color: white;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    }
-
-#subscribe button:hover,.read-more:hover {
-      background-color: #16a085;
-    }
 .read-more {
       margin-top: 15px;
       padding: 8px 14px;
@@ -116,3 +288,20 @@ blockquote{
       border-radius: 6px;
       cursor: pointer;
     }
+ol {
+    width: 70%;
+    margin: 0 auto 30px auto;
+    padding-left: 30px;
+    background: #EAEFEF;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(127,140,170,0.08);
+}
+
+ol > li {
+    font-size: 1.18rem;
+    line-height: 2;
+    margin-bottom: 12px;
+    color: #333446;
+    font-family: "Trebuchet MS", sans-serif;
+    padding: 10px 0 10px 4px;
+}    
