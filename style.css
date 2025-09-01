@@ -1,0 +1,54 @@
+/* {
+
+} */
+
+h1{
+    color: green;
+}
+
+#my-header{
+    color: blue;
+}
+
+.my-second-header {
+    color: red;
+}
+img{
+    width: 500px; 
+    height: 500px;
+} 
+[alt*="photoo"]{ 
+     
+    width: 70px;
+    height: 70px;
+    border: 20px red solid;
+}
+
+/* [src^="data"]{ 
+
+     start with data word in src
+
+} */
+
+/* [id $="spam"]{
+    $ means ends with
+    color: brown;
+} */
+
+/* 
+div :hover{
+    background-color: aqua;
+} */
+
+/* #first-div:hover{
+    background-color: red;
+} */
+
+#only-p-tag::first-line{
+    color: chartreuse;
+}
+
+div p{
+    background-color: black;
+}
+
